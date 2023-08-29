@@ -1035,6 +1035,11 @@ input {
 
 /*===== Contact Section =====*/
 
+.contact__description {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 .contact__container {
     grid-template-columns: 300px 340px;
     column-gap: 3rem;
