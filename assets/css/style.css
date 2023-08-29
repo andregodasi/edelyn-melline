@@ -648,6 +648,10 @@ input {
 
 /*===== Work Section =====*/
 
+.work {
+    background-color: var(--box-color);
+}
+
 .work__container {
     grid-template-columns: repeat(3, 330px);
     justify-content: center;
@@ -826,10 +830,6 @@ input {
 
 /*===== Services Section =====*/
 
-.services {
-    background-color: var(--box-color);
-
-}
 
 .servicess__container {
     grid-template-columns: repeat(3, 250px);
