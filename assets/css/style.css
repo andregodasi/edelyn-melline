@@ -1533,7 +1533,6 @@ textarea.input {
 
     .home__img {
         display: block;
-        width: 250px;
         justify-self: center;
     }
 
@@ -1599,10 +1598,6 @@ textarea.input {
     .container {
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
-    }
-
-    .home__img {
-        width: 200px;
     }
 
     .home__title {
