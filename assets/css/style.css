@@ -16,7 +16,7 @@
     --scroll-bar-color: hsl(var(--hue-color), 12%, 38%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 26%); */
 
-    --skin-color: #96140e;
+    --skin-color: #c10e06;
     --title-color: #ffffff;
     --text-color: #ffffff;
     --body-color: #454545;
@@ -186,6 +186,15 @@ input {
     color: var(--title-color);
     font-weight: var(--font-bold);
     line-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.nav__logo-text img {
+    width: 60%;
 }
 
 .nav__menu {
@@ -222,6 +231,7 @@ input {
     left: 0;
     right: 0;
     text-align: center;
+    color: var(--title-color);
 }
 
 .social__share {
@@ -375,6 +385,7 @@ input {
 .info__title,
 .info__subtitle {
     font-size: var(--small-font-size);
+    color: var(--title-color);
 }
 
 .info__title {
@@ -1069,6 +1080,7 @@ input {
 .contact__card-data,
 .contact__card-title {
     font-size: var(--small-font-size);
+    color: var(--title-color);
 }
 
 .contact__card-title {

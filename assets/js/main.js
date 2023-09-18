@@ -14,12 +14,18 @@ if (navToggle) {
 
 /*===== SIDEBAR HIDDEN =====*/
 /* Validate If Constant Exists */
+const navLink = document.querySelectorAll('.nav__link');
 
 if (navClose) {
     navClose.addEventListener("click", () => {
         navMenu.classList.remove('show-sidebar')
     })
+
+    navLink.forEach(n => n.addEventListener('click', () => {
+        navMenu.classList.remove('show-sidebar')
+    }));
 }
+
 
 /*=============== SKILLS TABS ===============*/
 const tabs = document.querySelectorAll('[data-target]'),

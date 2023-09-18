@@ -22,6 +22,26 @@
     <!--========== MAIN CSS ==========-->
     <link rel="stylesheet" href="assets/css/style.css" />
 
+    <!--========== FAVICON ==========-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest" />
+
     <title>Dra. Edelyn Melline</title>
   </head>
 
@@ -33,7 +53,9 @@
     <aside class="sidebar" id="sidebar">
       <nav class="nav">
         <div class="nav__logo">
-          <a href="index.html" class="nav__logo-text">M</a>
+          <a href="index.html" class="nav__logo-text"
+            ><img src="assets/img/logo-white.png" alt="logo"
+          /></a>
         </div>
 
         <div class="nav__menu">
@@ -66,9 +88,13 @@
           </div>
         </div>
 
-        <div class="btn__share">
+        <a
+          href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.facebook.com/edelynmelline"
+          target="_blank"
+          class="btn__share"
+        >
           <i class="uil uil-share-alt social__share"></i>
-        </div>
+        </a>
         <div class="nav__close" id="nav-close">
           <i class="uil uil-times"></i>
         </div>
@@ -83,28 +109,21 @@
             <span class="home__social-follow">Me siga</span>
             <div class="home__social-links">
               <a
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/edelynmelline"
                 target="_blank"
                 class="home__social-link"
               >
                 <i class="uil uil-facebook-f"></i>
               </a>
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/adv.edelynm_/"
                 target="_blank"
                 class="home__social-link"
               >
                 <i class="uil uil-instagram"></i>
               </a>
               <a
-                href="https://twitter.com/"
-                target="_blank"
-                class="home__social-link"
-              >
-                <i class="uil uil-twitter"></i>
-              </a>
-              <a
-                href="https://linkedin.com/"
+                href="https://www.linkedin.com/in/edelyn-melline-santos-7237a8261/"
                 target="_blank"
                 class="home__social-link"
               >
@@ -138,23 +157,27 @@
               </div>
             </div> -->
 
-            <div class="info__item">
+            <a
+              href="https://wa.me/5541996051327"
+              target="_blank"
+              class="info__item"
+            >
               <i class="uil uil-whatsapp info__icon"></i>
 
               <div>
                 <h3 class="info__title">Whatsapp</h3>
                 <span class="info__subtitle">41 9 9605-1327</span>
               </div>
-            </div>
+            </a>
 
-            <div class="info__item">
+            <a href="mailto:adv.edelynm@gmail.com" class="info__item">
               <i class="uil uil-envelope-edit info__icon"></i>
 
               <div>
                 <h3 class="info__title">Email</h3>
                 <span class="info__subtitle">adv.edelynm@gmail.com</span>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
@@ -1080,14 +1103,14 @@
         </h2>
 
         <p class="contact__description">
-          Me conte um poco do seu caso, a urgência para retorno e sua
-          principal duvida.
+          Me conte um poco do seu caso, a urgência para retorno e sua principal
+          duvida.
         </p>
 
         <div class="contact__container container grid">
           <div class="contact__content">
             <div class="contact__info">
-              <div class="contact__card">
+              <a href="mailto:adv.edelynm@gmail.com" class="contact__card">
                 <i class="uil uil-envelope-edit contact__card-icon"></i>
                 <h3 class="contact__card-title">Email</h3>
                 <span class="contact__card-data">adv.edelynm@gmail.com</span>
@@ -1096,9 +1119,13 @@
                     class="uil uil-arrow-right contact__button-icon"
                   ></i>
                 </span>
-              </div>
+              </a>
 
-              <div class="contact__card">
+              <a
+                href="https://wa.me/5541996051327"
+                target="_blank"
+                class="contact__card"
+              >
                 <i class="uil uil-whatsapp contact__card-icon"></i>
                 <h3 class="contact__card-title">Whatsapp</h3>
                 <span class="contact__card-data">41 9 9605-1327</span>
@@ -1107,7 +1134,7 @@
                     class="uil uil-arrow-right contact__button-icon"
                   ></i>
                 </span>
-              </div>
+              </a>
               <!-- <div class="contact__card">
                 <i class="uil uil-facebook-messenger contact__card-icon"></i>
                 <h3 class="contact__card-title">Messenger</h3>
@@ -1121,34 +1148,44 @@
             </div>
           </div>
           <div class="contact__content">
-            <form action="" class="contact__form">
+            <form
+              target="_blank"
+              action="https://formsubmit.co/andre.godasi@gmail.com"
+              method="POST"
+              class="contact__form"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="Contato através do site"
+              />
               <div class="input__container">
-                <input type="text" class="input" />
+                <input type="text" class="input" name="name" required />
                 <label for="">Nome</label>
                 <span>Nome</span>
               </div>
 
               <div class="input__container">
-                <input type="email" class="input" />
+                <input type="email" class="input" name="email" required />
                 <label for="">Email</label>
                 <span>Email</span>
               </div>
 
-              <div class="input__container">
+              <!-- <div class="input__container">
                 <input type="tel" class="input" />
                 <label for="">Telefone</label>
                 <span>Telefone</span>
               </div>
-
+ -->
               <div class="input__container textarea">
-                <textarea name="" id="" class="input"></textarea>
+                <textarea name="" id="" class="input" name="message"></textarea>
                 <label for="">Mensagem</label>
                 <span>Mensagem</span>
               </div>
-              <a type="submit" class="button"
-                ><i class="uil uil-navigator button__icon"></i>
+              <button type="submit" class="button">
+                <i class="uil uil-navigator button__icon"></i>
                 Enviar mensagem
-              </a>
+              </button>
             </form>
           </div>
         </div>
@@ -1179,21 +1216,21 @@
 
             <div class="footer__socials">
               <a
-                href="https://twitter.com/"
+                href="https://www.linkedin.com/in/edelyn-melline-santos-7237a8261/"
                 target="_blank"
                 class="footer__social"
               >
                 <i class="uil uil-linkedin"></i>
               </a>
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/adv.edelynm_/"
                 target="_blank"
                 class="footer__social"
               >
                 <i class="uil uil-instagram"></i>
               </a>
               <a
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/edelynmelline"
                 target="_blank"
                 class="footer__social"
               >
