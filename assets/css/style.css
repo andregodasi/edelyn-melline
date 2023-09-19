@@ -1344,6 +1344,64 @@ textarea.input {
     border-radius: .5rem;
 }
 
+/*========== CHAT BUBBLE ==========*/
+
+.chat-bubble-container {
+    position: fixed;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    animation: float 2s ease-in-out infinite;
+    animation:
+        shake 3s cubic-bezier(.36, .07, .19, .97) 2s infinite;
+}
+
+.chat-bubble-container .chat-bubble {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-bubble__icon {
+    font-size: 2.5rem;
+    color: var(--text-color);
+
+}
+
+
+
+@keyframes shake {
+    0% {
+        transform: translate(0, 0) rotate(0);
+    }
+
+    20% {
+        transform: translate(-10px, 0) rotate(-20deg);
+    }
+
+    30% {
+        transform: translate(10px, 0) rotate(20deg);
+    }
+
+    50% {
+        transform: translate(-10px, 0) rotate(-10deg);
+    }
+
+    60% {
+        transform: translate(10px, 0) rotate(10deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
+}
+
+
 
 /*========== UTILS ==========*/
 .mobile-visible {
