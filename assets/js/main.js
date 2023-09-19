@@ -185,3 +185,18 @@ function scrollActive() {
 window.addEventListener('scroll', scrollActive)
 
 /*=============== SHOW SCROLL UP ===============*/
+
+
+/*=============== Email successfully sent ===============*/
+const urlParams = new URLSearchParams(window.location.search);
+const emailSuccessfullySent = urlParams.get('email-successfully-sent');
+
+if(emailSuccessfullySent) {
+    const contactContent = document.getElementById('contact-content');
+    const contactEmailSuccessfullySent = document.getElementById('contact-email-successfully-sent');
+    contactContent.style.display = 'none';
+    contactEmailSuccessfullySent.style.display = 'flex';
+
+}
+
+/*=============== Email successfully sent ===============*/

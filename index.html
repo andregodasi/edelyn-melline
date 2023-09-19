@@ -84,6 +84,14 @@
               <li class="nav__item">
                 <a href="#contact" class="nav__link">Contato</a>
               </li>
+
+              <li class="nav__item">
+                <div class="name__logo mobile-visible">
+                  <a href="index.html" class="name__logo-text"
+                    ><img src="assets/img/logo-white.png" alt="logo"
+                  /></a>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -135,7 +143,14 @@
           <img src="assets/img/edelyn-13.jpg" alt="" class="home__img" />
 
           <div class="home__data">
-            <h1 class="home__title">Dra. Edelyn Melline</h1>
+            <h1 class="home__title">
+              <div class="name__logo mobile-visible">
+                <a href="index.html" class="name__logo-text"
+                  ><img src="assets/img/logo-white.png" alt="logo"
+                /></a>
+              </div>
+              Dra. Edelyn Melline
+            </h1>
             <h3 class="home__subtitle">Advogada</h3>
             <p class="home__description">
               FAMÍLIARISTA, Direito de Família e Sucessões, com ênfase em
@@ -170,12 +185,12 @@
               </div>
             </a>
 
-            <a href="mailto:adv.edelynm@gmail.com" class="info__item">
+            <a href="mailto:adv.edelynmelline@gmail.com" class="info__item">
               <i class="uil uil-envelope-edit info__icon"></i>
 
               <div>
                 <h3 class="info__title">Email</h3>
-                <span class="info__subtitle">adv.edelynm@gmail.com</span>
+                <span class="info__subtitle">adv.edelynmelline@gmail.com</span>
               </div>
             </a>
           </div>
@@ -817,7 +832,14 @@
               <ul class="details__info">
                 <li>Publicado em - <span>Novembro de 2022</span></li>
                 <li>
-                  Leia na integra - <span><a href="#">www.domain.com</a></span>
+                  Leia na integra -
+                  <span
+                    ><a
+                      href="article/advocacia-sistemica-e-conflitos-familiares-criando-pontes-ao-inves-de-muros.pdf"
+                      target="_blank"
+                      >Artigo completo</a
+                    ></span
+                  >
                 </li>
               </ul>
             </div>
@@ -1110,10 +1132,10 @@
         <div class="contact__container container grid">
           <div class="contact__content">
             <div class="contact__info">
-              <a href="mailto:adv.edelynm@gmail.com" class="contact__card">
+              <a href="mailto:adv.edelynmelline@gmail.com" class="contact__card">
                 <i class="uil uil-envelope-edit contact__card-icon"></i>
                 <h3 class="contact__card-title">Email</h3>
-                <span class="contact__card-data">adv.edelynm@gmail.com</span>
+                <span class="contact__card-data">adv.edelynmelline@gmail.com</span>
                 <span class="contact__button">
                   Envie um e-mail<i
                     class="uil uil-arrow-right contact__button-icon"
@@ -1147,9 +1169,9 @@
               </div> -->
             </div>
           </div>
-          <div class="contact__content">
+          <div class="contact__content" id="contact-content">
             <form
-              action="https://formsubmit.co/21c9493bbd341dc2973911ce3128986a"
+              action="https://formsubmit.co/adv.edelynmelline@gmail.com"
               method="POST"
               enctype="multipart/form-data"
               class="contact__form"
@@ -1182,11 +1204,32 @@
                 <label for="">Mensagem</label>
                 <span>Mensagem</span>
               </div>
+              <input
+                type="hidden"
+                name="_next"
+                value="https://andregodasi.github.io/edelyn-melline?email-successfully-sent=true#contact"
+              />
               <button type="submit" class="button">
                 <i class="uil uil-navigator button__icon"></i>
                 Enviar mensagem
               </button>
             </form>
+          </div>
+          <div
+            class="email__successfully__sent"
+            id="contact-email-successfully-sent"
+          >
+            <p class="email__successfully__sent-title">
+              E-mail enviado com sucesso!!!
+            </p>
+            <p class="email__successfully__sent-description">
+              Iremos analisar seu e-mail e logo mais entraremos em contato, caso
+              queria um atendimento mais personalizado click no icone no
+              Whatsapp.
+            </p>
+            <i
+              class="uil uil-envelope-check email__successfully__sent-check__icon"
+            ></i>
           </div>
         </div>
       </section>
@@ -1196,7 +1239,14 @@
         <div class="footer__bg">
           <div class="footer__container container grid">
             <div>
-              <h1 class="footer__title">Dra. Edelyn Melline</h1>
+              <h1 class="footer__title">
+                <div class="name__logo">
+                  <a href="index.html" class="name__logo-text"
+                    ><img src="assets/img/logo-white.png" alt="logo"
+                  /></a>
+                </div>
+                Dra. Edelyn Melline
+              </h1>
               <span class="footer__subtitle">Advogada</span>
             </div>
 

@@ -263,6 +263,34 @@ input {
     display: none;
 }
 
+/* NAME LOGO */
+
+.name__logo {
+    min-width: 40px;
+    min-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+    display: inherit;
+}
+
+.name__logo-text {
+    font-size: 1.125rem;
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.name__logo-text img {
+    width: 60%;
+}
+
 
 /* Active Link */
 
@@ -355,6 +383,7 @@ input {
 }
 
 .home__title {
+    display: inline-block;
     font-size: var(--biggest-font-size);
 }
 
@@ -1203,6 +1232,33 @@ textarea.input {
     opacity: 1;
 }
 
+/*=============== EMAIL SUCCESSFULLY SENT ===============*/
+
+.email__successfully__sent {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.email__successfully__sent-title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+    color: var(--title-color);
+}
+
+.email__successfully__sent-description {
+    margin-bottom: var(--mb-1);
+    color: var(--title-color);
+    text-align: center;
+}
+
+.email__successfully__sent-check__icon {
+    font-size: 8rem;
+    color: var(--skin-color)
+}
 
 /*=============== FOOTER ===============*/
 
@@ -1221,6 +1277,9 @@ textarea.input {
 }
 
 .footer__title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     font-size: var(--h1-font-size);
     margin-bottom: var(--mb-0-25);
 }
@@ -1283,6 +1342,12 @@ textarea.input {
 ::-webkit-scrollbar-thumb {
     background-color: var(--scroll-thumb-color);
     border-radius: .5rem;
+}
+
+
+/*========== UTILS ==========*/
+.mobile-visible {
+    display: none;
 }
 
 
@@ -1442,6 +1507,10 @@ textarea.input {
 
     .details__title {
         margin-bottom: var(--mb-0-75);
+    }
+
+    .mobile-visible {
+        display: inherit;
     }
 }
 
